@@ -21,7 +21,7 @@
 
 • `Const` **FILE\_CACHER\_URL**: \"https://worker.specless.app/1/file-cacher\" = "https://worker.specless.app/1/file-cacher"
 
-*Defined in [native-css.ts:1](https://github.com/Specless-Next/creative-utils/blob/68f1d5e/src/native-css.ts#L1)*
+*Defined in [native-css.ts:1](https://github.com/Specless-Next/creative-utils/blob/efdd119/src/native-css.ts#L1)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • `Const` **NATIVE\_CSS\_URL**: \"https://us-central1-specless-next.cloudfunctions.net/ad-server-native-css\" = "https://us-central1-specless-next.cloudfunctions.net/ad-server-native-css"
 
-*Defined in [native-css.ts:2](https://github.com/Specless-Next/creative-utils/blob/68f1d5e/src/native-css.ts#L2)*
+*Defined in [native-css.ts:2](https://github.com/Specless-Next/creative-utils/blob/efdd119/src/native-css.ts#L2)*
 
 ## Functions
 
@@ -37,7 +37,7 @@ ___
 
 ▸ `Const`**formNativeCssUrl**(`orgId`: string, `domain`: string, `cacheTimeout?`: number): string
 
-*Defined in [native-css.ts:14](https://github.com/Specless-Next/creative-utils/blob/68f1d5e/src/native-css.ts#L14)*
+*Defined in [native-css.ts:14](https://github.com/Specless-Next/creative-utils/blob/efdd119/src/native-css.ts#L14)*
 
 Generate a link to Native CSS Ad Server Function.
 

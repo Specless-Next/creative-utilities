@@ -13,8 +13,9 @@ const NATIVE_CSS_URL = 'https://us-central1-specless-next.cloudfunctions.net/ad-
  * @returns - Css File
  */
 const formNativeCssUrl = (orgId, domain, cacheTimeout = 6 * 60 * 60) => {
-    const cacheValue = Math.floor(Date.now() / (1000 * cacheTimeout));
-    const nativeUrl = `${NATIVE_CSS_URL}?org=${orgId}&domain=${domain}&cache=${cacheValue}`;
+    const cacheValue = Math.floor(Date.now() / (1000 * Math.abs(cacheTimeout)));
+    const finalDomain = domain.replace('https://', '').replace('http://', '');
+    const nativeUrl = `${NATIVE_CSS_URL}?org=${orgId}&domain=${finalDomain}&cache=${cacheValue}`;
     return `${FILE_CACHER_URL}?url=${encodeURIComponent(nativeUrl)}`;
 };
 exports.formNativeCssUrl = formNativeCssUrl;
