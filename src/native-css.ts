@@ -4,7 +4,7 @@
  *
  * @param orgId - Organization Id
  * @param domain - Domain Url - **Do not prefix with https or http**
- * @param cacheTimeout - Enter timeout for caching in seconds - Default to 6 hours
+ * @param cacheTimeout - Enter timeout for cache in seconds - Default to 6 hours
  */
 const formNativeCssUrl = (
   orgId: string,
