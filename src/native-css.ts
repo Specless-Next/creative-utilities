@@ -4,6 +4,7 @@ const NATIVE_CSS_URL =
 
 /**
  * Generate a link to Native CSS Ad Server Function.
+ * A css file is returned.
  *
  * @param orgId - Organization Id
  * @param domain - Domain Url - **Do not prefix with https or http**
