@@ -1,10 +1,6 @@
 "use strict";
-/**
- * Utility function to form Panel Url
- */
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.createIFrame = exports.formPanelUrl = void 0;
-const url_1 = require("url");
 const formPanelUrl = (panelQuery, csfConstants) => {
     const requiredConstants = [
         'templateConfig',
@@ -15,7 +11,7 @@ const formPanelUrl = (panelQuery, csfConstants) => {
         'isPreviewInterface',
         'deviceType',
     ];
-    const urlParams = new url_1.URLSearchParams();
+    const urlParams = new URLSearchParams();
     // Add params for panelQuery
     Object.entries(panelQuery).forEach(([prop, value]) => {
         urlParams.set(prop, String(value));

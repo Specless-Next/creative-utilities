@@ -1,9 +1,6 @@
 /**
  * Utility function to form Panel Url
  */
-
-import {URLSearchParams} from 'url';
-
 type panelQuery = {
   id: string;
   width: number;
