@@ -10,4 +10,3 @@ Object.defineProperty(exports, "formPanelUrl", { enumerable: true, get: function
 Object.defineProperty(exports, "createIFrame", { enumerable: true, get: function () { return panel_1.createIFrame; } });
 const style_1 = require("./style");
 Object.defineProperty(exports, "createStyleTag", { enumerable: true, get: function () { return style_1.createStyleTag; } });
-//# sourceMappingURL=index.js.map

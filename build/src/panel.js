@@ -40,4 +40,3 @@ const createIFrame = () => {
     return iframe;
 };
 exports.createIFrame = createIFrame;
-//# sourceMappingURL=panel.js.map

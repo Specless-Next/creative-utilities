@@ -22,4 +22,3 @@ const createStyleTag = (cssStr, id, props) => {
     return s;
 };
 exports.createStyleTag = createStyleTag;
-//# sourceMappingURL=style.js.map

@@ -15,4 +15,3 @@ const setupDfpSlot = (doc) => {
     doc.body.style.overflow = 'hidden';
 };
 exports.setupDfpSlot = setupDfpSlot;
-//# sourceMappingURL=google.js.map

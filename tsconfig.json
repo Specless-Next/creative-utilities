@@ -3,10 +3,12 @@
   "compilerOptions": {
     "lib": ["dom"],
     "rootDir": ".",
-    "outDir": "build"
+    "outDir": "build",
+    "sourceMap": false,
+    "declaration": false
   },
   "include": [
     "src/**/*.ts",
-    "test/**/*.ts"
+    "__tests__/**/*.ts"
   ]
 }

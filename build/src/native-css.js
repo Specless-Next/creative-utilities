@@ -19,4 +19,3 @@ const formNativeCssUrl = (orgId, domain, cacheTimeout = 6 * 60 * 60) => {
     return `${FILE_CACHER_URL}?url=${encodeURIComponent(nativeUrl)}`;
 };
 exports.formNativeCssUrl = formNativeCssUrl;
-//# sourceMappingURL=native-css.js.map
