@@ -3,7 +3,7 @@
  * Utility function to form Panel Url
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.formPanelUrl = void 0;
+exports.createIFrame = exports.formPanelUrl = void 0;
 const url_1 = require("url");
 const formPanelUrl = (panelQuery, csfConstants) => {
     const requiredConstants = [
@@ -30,4 +30,18 @@ const formPanelUrl = (panelQuery, csfConstants) => {
     return url;
 };
 exports.formPanelUrl = formPanelUrl;
+/**
+ * @returns {HTMLIFrameElement} Created Iframe
+ */
+const createIFrame = () => {
+    const iframe = document.createElement('IFRAME');
+    iframe.style.border = 'none';
+    iframe.style.width = '100%';
+    iframe.style.height = '100%';
+    iframe.style.position = 'absolute';
+    iframe.style.top = '0';
+    iframe.style.left = '0';
+    return iframe;
+};
+exports.createIFrame = createIFrame;
 //# sourceMappingURL=panel.js.map

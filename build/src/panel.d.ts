@@ -8,4 +8,8 @@ declare type panelQuery = {
     [k: string]: string | number | boolean;
 };
 declare const formPanelUrl: (panelQuery: panelQuery, csfConstants: any) => string;
-export { formPanelUrl };
+/**
+ * @returns {HTMLIFrameElement} Created Iframe
+ */
+declare const createIFrame: () => HTMLElement;
+export { formPanelUrl, createIFrame };

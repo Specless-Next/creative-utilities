@@ -5,7 +5,7 @@
 ### NPM Install
 
 ```bash
-npm i Specless-Next/creative-utils
+npm i github:Specless-Next/creative-utilities
 ```
 
 ### Documentation
