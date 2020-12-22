@@ -12,4 +12,19 @@ describe('Base Style Tag', () => {
         const typeAttr = styleTag.getAttribute('type');
         expect(typeAttr).toEqual('text/css');
     });
+    test('Style Tag content is set corectly', () => {
+        const innerText = styleTag.textContent;
+        expect(innerText).toEqual(cssStr);
+    });
+});
+describe('Style Tag Creation with Id / Props', () => {
+    const testId = 'testId';
+    const testProps = {
+        'data-specless': 'testValue',
+    };
+    const styleTag = style_1.createStyleTag(cssStr, testId, testProps);
+    test('Style tag id is set correctly', () => {
+        const id = styleTag.id;
+        expect(id).toEqual(testId);
+    });
 });
