@@ -1,6 +1,6 @@
 {
   "name": "@specless/creative-utilities",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Utility functions to help build creatives",
   "main": "build/src/index.js",
   "types": "build/src/index.d.ts",
