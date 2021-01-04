@@ -2,6 +2,14 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.createIFrame = exports.formPanelUrl = void 0;
 const formPanelUrl = (panelQuery, csfConstants) => {
+    const urlParams = new URLSearchParams();
+    // Add params for panelQuery
+    Object.entries(panelQuery).forEach(([prop, value]) => {
+        if (value) {
+            urlParams.set(`[panel]=${prop}`, String(value));
+        }
+    });
+    // Add params for constants
     const requiredConstants = [
         'templateConfig',
         'templateLibraryRoot',
@@ -11,15 +19,11 @@ const formPanelUrl = (panelQuery, csfConstants) => {
         'isPreviewInterface',
         'deviceType',
     ];
-    const urlParams = new URLSearchParams();
-    // Add params for panelQuery
-    Object.entries(panelQuery).forEach(([prop, value]) => {
-        urlParams.set(prop, String(value));
-    });
-    // Add params for constants
-    requiredConstants.forEach(c => {
-        const value = String(csfConstants[c]);
-        urlParams.set(c, value);
+    requiredConstants.forEach(key => {
+        const value = String(csfConstants[key]);
+        if (value) {
+            urlParams.set(`constants[${key}]`, value);
+        }
     });
     const baseUrl = `${csfConstants.templateRoot}/html/${panelQuery.id}`;
     const url = `${baseUrl}?${urlParams.toString()}`;

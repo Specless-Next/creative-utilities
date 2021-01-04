@@ -16,7 +16,7 @@
 
 ▸ `Const`**createStyleTag**(`cssStr`: string, `id?`: undefined \| string, `props?`: undefined \| object): HTMLStyleElement
 
-*Defined in [style.ts:7](https://github.com/Specless-Next/creative-utilities/blob/aa1e21c/src/style.ts#L7)*
+*Defined in [style.ts:7](https://github.com/Specless-Next/creative-utilities/blob/af604f3/src/style.ts#L7)*
 
 Create a style tag with given css string
 

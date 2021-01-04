@@ -21,7 +21,9 @@
 
 Ƭ  **panelQuery**: { [k:string]: string \| number \| boolean; height: number ; id: string ; width: number  }
 
-*Defined in [panel.ts:7](https://github.com/Specless-Next/creative-utilities/blob/aa1e21c/src/panel.ts#L7)*
+*Defined in [panel.ts:4](https://github.com/Specless-Next/creative-utilities/blob/af604f3/src/panel.ts#L4)*
+
+Utility function to form Panel Url
 
 #### Type declaration:
 
@@ -37,7 +39,7 @@ Name | Type |
 
 ▸ `Const`**createIFrame**(): HTMLElement
 
-*Defined in [panel.ts:46](https://github.com/Specless-Next/creative-utilities/blob/aa1e21c/src/panel.ts#L46)*
+*Defined in [panel.ts:47](https://github.com/Specless-Next/creative-utilities/blob/af604f3/src/panel.ts#L47)*
 
 **Returns:** HTMLElement
 
@@ -49,7 +51,7 @@ ___
 
 ▸ `Const`**formPanelUrl**(`panelQuery`: panelQuery, `csfConstants`: any): string
 
-*Defined in [panel.ts:14](https://github.com/Specless-Next/creative-utilities/blob/aa1e21c/src/panel.ts#L14)*
+*Defined in [panel.ts:11](https://github.com/Specless-Next/creative-utilities/blob/af604f3/src/panel.ts#L11)*
 
 #### Parameters:
 

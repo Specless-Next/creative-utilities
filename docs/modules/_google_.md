@@ -16,7 +16,7 @@
 
 ▸ `Const`**setupDfpSlot**(`doc`: HTMLDocument): void
 
-*Defined in [google.ts:5](https://github.com/Specless-Next/creative-utilities/blob/aa1e21c/src/google.ts#L5)*
+*Defined in [google.ts:5](https://github.com/Specless-Next/creative-utilities/blob/af604f3/src/google.ts#L5)*
 
 Sets up the inside of the DFP slot
 
