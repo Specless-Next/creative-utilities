@@ -1,7 +1,7 @@
 ### NPM Install
 
 ```bash
-npm i github:Specless-Next/creative-utilities
+npm i @specless/creative-utilities
 ```
 
 
