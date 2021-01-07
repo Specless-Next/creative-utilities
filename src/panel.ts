@@ -42,6 +42,15 @@ const formPanelUrl = (panelQuery: panelQuery, csfConstants: any) => {
 };
 
 /**
+ * Iframe is created with the following style
+ * ```css
+ * position: absolute;
+ * border: none;
+ * width: 100%;
+ * height: 100%;
+ * top: 0;
+ * left: 0;
+ * ```
  * @returns {HTMLIFrameElement} Created Iframe
  */
 const createIFrame = () => {
