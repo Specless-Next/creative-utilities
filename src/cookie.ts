@@ -7,13 +7,16 @@
  * @param doc Optional document to pass to cookie
  */
 const setCookie = (identifier: string, expires = 24, doc = document) => {
-  let expireStr = '';
-  if (expires) {
+  try {
     const date = new Date();
     date.setTime(date.getTime() + expires * 60 * 60 * 1000);
-    expireStr = `;expires= + ${date.toUTCString()}`;
+    const expireStr = `expires= + ${date.toUTCString()}`;
+    const cookieStr = `${identifier}=${identifier};${expireStr};path=/`;
+    doc.cookie = cookieStr;
+    return true;
+  } catch (e) {
+    return false;
   }
-  doc.cookie = `${identifier}=""${expireStr};path=/`;
 };
 
 /**
@@ -24,10 +27,13 @@ const setCookie = (identifier: string, expires = 24, doc = document) => {
  * @param doc Optional pass in the document to use
  */
 const checkCookie = (indentifier: string, doc = document) => {
-  const present = doc.cookie.match(
-    '(^|;)\\s*' + indentifier + '\\s*=\\s*([^;]+)'
-  );
-  return present ? true : false;
+  try {
+    const pattern = `(^|;)\\s*'${indentifier}'\\s*=\\s*([^;]+)`;
+    const present = doc.cookie.match(pattern);
+    return present ? true : false;
+  } catch (e) {
+    return false;
+  }
 };
 
 export {checkCookie, setCookie};
