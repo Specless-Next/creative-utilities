@@ -10,7 +10,7 @@ const setCookie = (identifier: string, expires = 24, doc = document) => {
   try {
     const date = new Date();
     date.setTime(date.getTime() + expires * 60 * 60 * 1000);
-    const expireStr = `expires= + ${date.toUTCString()}`;
+    const expireStr = `expires=${date.toUTCString()}`;
     const cookieStr = `${identifier}=${identifier};${expireStr};path=/`;
     doc.cookie = cookieStr;
     return true;
