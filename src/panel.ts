@@ -3,11 +3,17 @@
  */
 type panelQuery = {
   id: string;
-  width: number;
-  height: number;
+  initialWidth: number;
+  initialHeight: number;
   [k: string]: string | number | boolean;
 };
 
+/**
+ * Construct url for the iframe panel.
+ *
+ * @param panelQuery - Provide panel id / initial width and height
+ * @param csfConstants - Pass in the csf.env.constants here
+ */
 const formPanelUrl = (panelQuery: panelQuery, csfConstants: any) => {
   const urlParams = new URLSearchParams();
 
@@ -30,9 +36,10 @@ const formPanelUrl = (panelQuery: panelQuery, csfConstants: any) => {
   ];
 
   requiredConstants.forEach(key => {
-    const value = String(csfConstants[key]);
+    const value = csfConstants[key];
     if (value) {
-      urlParams.set(`constants[${key}]`, value);
+      const strValue = String(value);
+      urlParams.set(`constants[${key}]`, strValue);
     }
   });
 
